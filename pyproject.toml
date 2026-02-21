@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maritime-logistics-risk"
+version = "0.1.0"
+description = "Aggregiert offene Datenquellen und bewertet Seefracht-Logistikrisiken"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+maritime-risk = "maritime_risk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
